@@ -28,3 +28,9 @@
     transition: 0.3s;
     background-color: #00a6ff;
 }
+.compare table tbody .fa-x{
+    color: red;
+}
+.compare table tbody .fa-check{
+    color: green;
+}

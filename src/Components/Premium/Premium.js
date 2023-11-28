@@ -103,6 +103,67 @@ const Premium = () => {
 
 
                 </div>
+
+                {/* compares plan */}
+
+                <div className="compare pt-5 mt-5">
+                    <table className="table table-striped">
+                        <thead  >
+                            <tr className='text-center'>
+                                <th className='w-50'>Access</th>
+                                <th>Brozen</th>
+                                <th>Silver</th>
+                                <th>Gold</th>
+                                <th>Diamond</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className='text-center'>
+                                <td>classes</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                            <tr className='text-center'>
+                                <td>group class</td>
+                                <td>4</td>
+                                <td>6</td>
+                                <td>8</td>
+                                <td>10</td>
+                            </tr>
+                            <tr className='text-center'>
+                                <td>online-class</td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr className='text-center'>
+                                <td>e-book fitness</td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr className='text-center'>
+                                <td>extra fitness activity</td>
+                                <td><i class="fa-solid fa-x"></i></td>
+                                <td><i class="fa-solid fa-x"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr className='text-center'>
+                                <td>personal trainer</td>
+                                <td><i class="fa-solid fa-x"></i></td>
+                                <td><i class="fa-solid fa-x"></i></td>
+                                <td><i class="fa-solid fa-x"></i></td>
+                                <td><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
     </div>
