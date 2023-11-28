@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -27,18 +27,18 @@ function Navbar() {
                 >
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
                     <li className="nav-item">
-                      <a
+                      <Link to="/"
                         href="#"
                         className="nav-link text-light active "
                         aria-current="page"
                       >
-                        Home
-                      </a>
+                      Home
+                      </Link>
                     </li>
                     <li className="nav-item ">
-                      <a href="#" className=" nav-link text-light mx-2">
+                      <Link href="#" to="/Premium" className=" nav-link text-light mx-2">
                         Premium
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item ">
                       <a href="#" className=" nav-link text-light mx-2">
