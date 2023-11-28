@@ -56,9 +56,9 @@ function Navbar() {
                       </a>
                     </li>
                     <li className="nav-item ">
-                      <a href="#" className=" nav-link text-light mx-2">
+                      <Link to="/About" href="#" className=" nav-link text-light mx-2">
                         About us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
