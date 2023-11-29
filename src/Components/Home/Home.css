@@ -1,0 +1,88 @@
+.home{
+    background-color: black;
+}
+.sec1{
+    margin-top: 5%;
+}
+.sec1>div{
+    background: url(/public/Assets/home-img/poster.jpg) black no-repeat ;
+    background-position:right;
+    background-size: contain;
+    height: 500px;
+    padding-left: 10%;
+}
+.btns>button:hover{
+    box-shadow: 0 0 70px rgb(13, 202, 240);
+}
+.heading{
+    font-size: 64px;
+    font-weight: bolder;
+}
+.sec2{
+    height: max-content;
+}
+.points{
+    padding: 10px ;
+}
+.points>b{
+    font-size: 20px;
+}
+
+/* Plans */
+.plans .card{
+    width: 280px;
+    color: white;
+    background-color: #212529;
+}
+.plans .card:hover button{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.plans .card:hover button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.plans .card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #00a6ff;
+}
+/* trainer */
+
+/* form */
+.form{
+    background: url(/public/Assets/home-img/form-bg.jpg) black no-repeat ;
+    background-position:left;
+    background-size: contain;
+    height: 500px;
+    border: 2px solid rgb(13, 202, 240);
+}
+::placeholder{
+    color: rgb(13, 202, 240);
+}
+input{
+    outline: none;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.fsubmit{
+    background-color: transparent;
+    color: rgb(13, 202, 240);
+}
+.fsubmit:hover{
+    background-color: rgb(13, 202, 240);
+    color: white;
+}
