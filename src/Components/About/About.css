@@ -16,6 +16,14 @@
 .story .row p{
     font-size: 1.2em;
 }
+img{
+    transform: translateX(100%);
+    transition: 0.8s ease;
+}
+.show{
+    transform: translateX(0)
+}
+
 
 @media(max-width:600px){
     .main .title p{

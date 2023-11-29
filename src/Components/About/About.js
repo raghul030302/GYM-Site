@@ -2,7 +2,18 @@ import React from 'react'
 import './About.css'
 
 const About = () => {
-  
+
+    const lazy = document.querySelectorAll('img');
+
+    const show = ()=> {
+        const trigger = window.innerHeight;
+        lazy.forEach(img => {
+            const top = img.getBoundingClientRect().top;
+            if(top < trigger) img.classList.add("show"); 
+            else img.classList.remove("show");
+        })
+    }
+    window.addEventListener("scroll", show);
 
   return (
     <section className='about mt-4 pt-5 w-100'>
@@ -16,7 +27,7 @@ const About = () => {
         {/* story */}
         <div className="story">
             <div className="row gap-5 mx-5 d-flex flex-wrap justify-content-center">
-                <div className="col-lg-5 col py-5 mt-4 text-white">
+                <div className="col-lg-5 col py-5 mt-5 text-white">
                     <h3 className='ms-3 fw-bolder text-info '>Our origin story</h3>
                     <p className='pt-3'>we help our customers achieve limitless potential with the tools, inspiration, and motivation they need to fuel their routines, crush goals, and breakthrough unchartered territory that leads to happier, healthier and more fulfilling lives.
                     <br /><br />
@@ -26,12 +37,13 @@ const About = () => {
                 </div>
                 
                 <div className="col-lg-5 col2 text-center d-flex align-items-center justify-content-center">
-                    <img src="/images/story.jpg" alt="origin" className='my-5 py-5 ' width={300} />
+                    {/* <img src="/images/story.jpg" alt="origin"  className='my-5 py-5 ' width={300} /> */}
+                    <img src="/images/story.jpg" alt="origin" width={300} className='py-5 my-5'/>
                 </div>
             </div>
         </div>
         {/* services */}
-        <div className="row d-flex justify-content-center">
+        <div className="row service d-flex justify-content-center">
             <div className="col-lg-5 d-flex justify-content-center align-items-center" style={{backgroundColor:'#777'}}>
                 <div className='m-5'>
                     <img src="/images/trainer.jpg" alt="trainer" className='shadow rounded' width={500} height={500} />
@@ -44,7 +56,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div className="row d-flex justify-content-center">
+        <div className="row d-flex service justify-content-center">
             <div className="col-lg-5 d-flex justify-content-center align-items-center bg-white">
                 <div className='m-5 text-center p-5'>
                     <h2 className='fw-bold'>TOOLS TO POWER ROUTINE</h2>
@@ -53,7 +65,7 @@ const About = () => {
             </div>
             <div className="col-lg-5 d-flex justify-content-center align-items-center" style={{backgroundColor:'#777'}}>
                 <div className='m-5'>
-                    <img src="/images/equipment.jpg" alt="trainer" className='shadow rounded' width={500} height={500} />
+                    <img  src="/images/equipment.jpg" alt="trainer" className='shadow rounded' width={500} height={500} />
                 </div>
             </div>
         </div>

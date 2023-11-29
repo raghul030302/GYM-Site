@@ -10,6 +10,7 @@
     width: 280px;
     color: white;
     background-color: #212529;
+    border: 3px solid #00a6ff;
 }
 .premium .plans .card:hover button{
     background-color: white;
