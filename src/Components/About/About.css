@@ -16,14 +16,9 @@
 .story .row p{
     font-size: 1.2em;
 }
-img{
-    transform: translateX(100%);
-    transition: 0.8s ease;
+.service img{
+    border: 3px solid rgb(13, 202, 240);
 }
-.show{
-    transform: translateX(0)
-}
-
 
 @media(max-width:600px){
     .main .title p{

@@ -3,17 +3,6 @@ import './About.css'
 
 const About = () => {
 
-    const lazy = document.querySelectorAll('img');
-
-    const show = ()=> {
-        const trigger = window.innerHeight;
-        lazy.forEach(img => {
-            const top = img.getBoundingClientRect().top;
-            if(top < trigger) img.classList.add("show"); 
-            else img.classList.remove("show");
-        })
-    }
-    window.addEventListener("scroll", show);
 
   return (
     <section className='about mt-4 pt-5 w-100'>
